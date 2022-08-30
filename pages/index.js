@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [url, setUrl] = useState("https://");
+  const [url, setUrl] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
 
   const onGenerateSubmit = (e) => {
@@ -72,7 +72,7 @@ export default function Home() {
               <input
                 className="appearance-none bg-transparent border-none w-full text-fourth mr-14 py-1 px-6 leading-tight focus:outline-none font-lato"
                 type="url"
-                placeholder="Enter webpage"
+                placeholder="https://wwww.example.com"
                 aria-label="web page"
                 pattern="https://.*"
                 value={url}
