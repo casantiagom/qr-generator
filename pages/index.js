@@ -70,10 +70,11 @@ export default function Home() {
           >
             <div className="flex items-center border-b border-first py-2">
               <input
-                className="appearance-none bg-transparent border-none w-full text-fourth mr-14 py-1 px-6 leading-tight focus:outline-none font-lato"
+                className="appearance-none bg-transparent border-none w-full text-fourth mr-2 py-1 px-6 leading-tight focus:outline-none font-lato"
                 type="url"
                 placeholder="https://wwww.example.com"
                 aria-label="web page"
+                size={40}
                 pattern="https://.*"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
